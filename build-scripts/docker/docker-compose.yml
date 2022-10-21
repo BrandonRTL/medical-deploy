@@ -1,0 +1,9 @@
+version: '2.4'
+
+services:
+  rabbitmq3:
+    image: rabbitmq:3.10-management
+    environment:
+      RABBITMQ_ERLANG_COOKIE: 'secret cookie here'
+    ports:
+      - 15672:15672
